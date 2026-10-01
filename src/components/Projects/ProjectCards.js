@@ -22,13 +22,13 @@ function ProjectCards(props) {
                 padding: "2px 8px",
               }}
             >
-              👥 Projet Collaboratif
+              👥 Collaborative Project
             </span>
           )}
         </Card.Title>
         {props.role && (
           <div style={{ fontSize: "0.85em", color: "#c084fc", marginBottom: "8px", fontWeight: 500 }}>
-            📌 <em>Rôle : {props.role}</em>
+            📌 <em>Role: {props.role}</em>
           </div>
         )}
         <Card.Text style={{ textAlign: "justify", color: "#a3a0b0" }}>

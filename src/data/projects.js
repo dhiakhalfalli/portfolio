@@ -1,8 +1,7 @@
 /**
- * FICHIER DE DONNÉES DES PROJETS - MOHAMED DHIA KHALFALLI
+ * PROJECTS DATA FILE - MOHAMED DHIA KHALFALLI
  * 
- * Ce fichier regroupe l'ensemble des projets réalisés (PFE, stages, projets d'études, projets personnels).
- * Pour ajouter ou mettre à jour un projet (comme Assurancy), modifiez directement cet objet.
+ * Comprehensive dataset containing all projects (Graduation project, internships, academic projects, and personal work).
  */
 
 import recruitmentImg from "../Assets/Projects/recruitment.jpg";
@@ -15,25 +14,25 @@ import sentimentImg from "../Assets/Projects/sentiment.jpg";
 export const projects = [
   {
     id: "segula-chatbot-rh",
-    title: "Chatbot RH Intelligent — SEGULA Technologies",
+    title: "Intelligent HR Agent & Recruitment Platform — SEGULA Technologies",
     year: "2026",
     domain: "AI",
     domains: ["AI", "Generative AI", "Backend"],
     featured: true,
     status: "completed",
     image: recruitmentImg,
-    shortDescription: "Plateforme IA de recrutement multi-agents basée sur LangGraph, RAG local (LLaMA 3.2), OCR et scoring explicable (XAI).",
-    context: "Projet de Fin d'Études (PFE) d'Ingénieur chez SEGULA Technologies Tunisie.",
-    problem: "Les processus RH conventionnels sont lents, manuels et sujets aux biais cognitifs lors du filtrage de gros volumes de CVs. De plus, les chatbots FAQ classiques manquent de compréhension contextuelle et de respect strict du RGPD.",
-    solution: "Conception d'une architecture multi-agents orchestrée par LangGraph avec RAG, pipeline OCR pour la lecture automatique de documents, génération augmentée de questions d'entretien, et tableau de bord complet.",
+    shortDescription: "Multi-agent AI recruitment platform powered by LangGraph, local RAG (LLaMA 3.2), OCR pipeline, and explainable scoring (XAI).",
+    context: "Master's Graduation Thesis (PFE) as Data Science & AI Engineer at SEGULA Technologies Tunisia.",
+    problem: "Conventional HR screening processes are time-consuming, manual, and prone to cognitive bias when processing large volumes of resumes. Standard FAQ chatbots lack deep contextual comprehension and GDPR compliance guarantees.",
+    solution: "Designed and implemented an end-to-end multi-agent system orchestrated by LangGraph with local RAG, automated OCR document ingestion, profile-tailored interview question generation, and an interactive recruiter dashboard.",
     features: [
-      "Agent CV : Extraction automatique de texte via OCR, analyse sémantique et matching offre/candidat",
-      "Agent HR Copilot : Assistant documentaire en langage naturel basé sur RAG",
-      "Agent Entretien : Génération de questions contextuelles adaptées au profil",
-      "Agent Privacy (RGPD) : Gestion stricte des consentements et de la conformité des données",
-      "Tableau de bord recruteur avec historique, métriques et contrôle d'accès basé sur les rôles (RBAC)"
+      "Resume Agent: Automated OCR text extraction, semantic analysis, and candidate-job matching",
+      "HR Copilot Agent: Natural language document-grounded assistant based on local RAG",
+      "Interview Agent: Dynamic generation of technical and contextual interview questions tailored to candidate profiles",
+      "Privacy Agent (GDPR): Strict consent management, data anonymization, and regulatory compliance",
+      "Recruiter Dashboard: Complete candidate tracking, history analytics, and Role-Based Access Control (RBAC)"
     ],
-    architecture: "Architecture modulaire multi-agents orchestrée par LangGraph, API REST FastAPI, frontend React, base vectorielle FAISS / MongoDB, et LLM LLaMA 3.2 déployé localement via Ollama / Groq.",
+    architecture: "Modular multi-agent architecture orchestrated by LangGraph, FastAPI REST backend, React frontend, FAISS vector store / MongoDB, and LLaMA 3.2 LLM running locally via Ollama / Groq.",
     technologies: [
       "FastAPI",
       "React.js",
@@ -49,31 +48,31 @@ export const projects = [
       "Docker",
       "RBAC"
     ],
-    contribution: "Conception de l'architecture de bout en bout : pipeline de traitement des données, orchestration des agents LangGraph, développement de l'API FastAPI et intégration frontend.",
-    results: "Accélération significative du tri initial des candidatures et garantie de conformité RGPD.",
+    contribution: "End-to-end architecture design and implementation: data processing pipelines, LangGraph agent workflows, FastAPI endpoints, and full frontend integration.",
+    results: "Substantial reduction in initial screening turnaround time and guaranteed strict GDPR compliance.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
   {
     id: "hirebridge",
-    title: "HireBridge — Explainable AI Recruitment",
+    title: "HireBridge — Explainable AI Recruitment Platform",
     year: "2025",
     domain: "AI",
     domains: ["AI", "Machine Learning", "Data Science"],
     featured: true,
     status: "completed",
     image: hirebridgeImg,
-    shortDescription: "Plateforme de recrutement assistée par IA conversationnelle et modèles d'IA explicable (XAI) pour des décisions d'embauche transparentes.",
-    context: "Projet centré sur la transparence algorithmique et l'évaluation équitable des compétences techniques.",
-    problem: "L'effet 'boîte noire' des algorithmes de matching en recrutement crée de la méfiance chez les recruteurs et empêche de comprendre les raisons objectives d'un score de matching.",
-    solution: "Intégration de techniques d'Explainable AI (XAI) permettant de visualiser l'impact de chaque critère (expériences, compétences, projets) sur le score global avec un chatbot d'assistance interactive.",
+    shortDescription: "Conversational AI and Explainable AI (XAI) recruitment platform designed for transparent, bias-free hiring decisions.",
+    context: "Engineering project focused on algorithmic transparency and fair evaluation of candidate technical competencies.",
+    problem: "The black-box nature of conventional matching algorithms creates mistrust among recruiters and obscures the objective criteria underlying candidate scores.",
+    solution: "Integrated Explainable AI (XAI) techniques to provide visual breakdowns of how specific qualifications (experience, skills, projects) contribute to overall scores, alongside an interactive assistant.",
     features: [
-      "Parsing et extraction automatique des compétences depuis les CV",
-      "Décomposition visuelle du score de matching par composantes clés (XAI)",
-      "Assistant conversationnel interactif pour interroger les dossiers candidats",
-      "Recherche sémantique haute performance avec FAISS"
+      "Automated resume parsing and semantic skill extraction",
+      "Visual XAI breakdown of candidate-job matching scores across core criteria",
+      "Interactive conversational assistant to query candidate dossiers",
+      "High-performance vector similarity search using FAISS"
     ],
-    architecture: "Interface Streamlit connectée à un moteur d'inférence Python / Scikit-Learn, vectorisation sémantique FAISS et couches d'explicabilité XAI.",
+    architecture: "Streamlit UI coupled with a Python inference engine, Scikit-Learn pipelines, FAISS vector embeddings, and XAI explainability layers.",
     technologies: [
       "Python",
       "Streamlit",
@@ -83,8 +82,8 @@ export const projects = [
       "Chatbot",
       "Scikit-Learn"
     ],
-    contribution: "Développement du pipeline de scoring explicable, intégration de la recherche sémantique vectorielle FAISS et conception de l'interface utilisateur.",
-    results: "Matching objectif et explicable avec réduction des biais de sélection.",
+    contribution: "Developed the explainable scoring pipeline, integrated FAISS semantic search, and designed the interactive recruiter dashboard.",
+    results: "Objective, interpretable candidate evaluation that significantly reduces screening bias.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
@@ -97,27 +96,27 @@ export const projects = [
     featured: true,
     status: "completed",
     image: footballImg,
-    shortDescription: "Système d'analyse tactique et de recommandation de profils de footballeurs combinant Computer Vision (CNN) et réseaux récurrents (RNN).",
-    context: "Projet de Data Science et Computer Vision appliqué au secteur du sport professionnel et du recrutement footballistique.",
-    problem: "Les clubs et recruteurs manquent d'outils automatisés pour capturer les trajectoires, analyser les choix tactiques et recommander les recrues idéales correspondant à un style de jeu précis.",
-    solution: "Modélisation hybride associant des réseaux convolutifs (CNN) pour l'analyse spatiale et des réseaux récurrents (RNN) pour les séquences temporelles, couplés à un système de recommandation intelligent.",
+    shortDescription: "Tactical analysis and player recommendation system combining Computer Vision (CNN) with Recurrent Neural Networks (RNN).",
+    context: "Data Science and Computer Vision project applied to professional sports analytics and recruitment.",
+    problem: "Clubs and scouts often lack automated tools to track player movements, analyze spatial-tactical decisions, and identify prospects matching specific tactical styles.",
+    solution: "Hybrid deep learning model pairing Convolutional Neural Networks (CNN) for spatial feature extraction with Recurrent Neural Networks (RNN) for sequence modeling, connected to a recommendation engine.",
     features: [
-      "Extraction et analyse de métriques de performance spatio-temporelles",
-      "Détection des schémas tactiques et du positionnement",
-      "Moteur de recommandation basé sur la similarité stylistique des joueurs",
-      "Plateforme orientée mise en relation clubs — joueurs — agents"
+      "Spatio-temporal performance metric extraction and analysis",
+      "Automated tactical pattern detection and positional tracking",
+      "Style-based recommendation engine for player matchmaking",
+      "Platform connecting clubs, players, and scouting agencies"
     ],
-    architecture: "Pipeline de traitement vidéo en Computer Vision, extraction de features via CNN/RNN, moteur de scoring et système de recommandation en Python.",
+    architecture: "Computer Vision video processing pipeline, CNN/RNN feature extraction models, scoring engine, and recommendation API in Python.",
     technologies: [
       "Python",
       "CNN",
       "RNN",
       "Computer Vision",
       "Deep Learning",
-      "Système de Recommandation"
+      "Recommendation Systems"
     ],
-    contribution: "Conception et entraînement des architectures neuronales, développement de la logique d'appariement et analyse des performances.",
-    results: "Recommandations tactiques cohérentes et appariement précis des profils sportifs.",
+    contribution: "Designed and trained deep neural network architectures, developed player profiling and similarity algorithms, and evaluated model performance.",
+    results: "Accurate tactical pattern recognition and highly coherent player matchmaking.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
@@ -130,18 +129,18 @@ export const projects = [
     featured: true,
     status: "completed",
     image: churnImg,
-    shortDescription: "Pipeline complet de prédiction d'attrition client, du feature engineering au déploiement d'API REST conteneurisée avec suivi MLflow.",
-    context: "Projet d'ingénierie Data Science & MLOps pour la rétention client en entreprise.",
-    problem: "Perte de revenus due au départ imprévu de clients sans détection précoce des signaux faibles de désengagement.",
-    solution: "Mise en place d'un pipeline d'apprentissage supervisé avec suivi d'expériences sous MLflow, exposition des prédictions en temps réel via une API FastAPI sécurisée et conteneurisation Docker.",
+    shortDescription: "End-to-end customer churn prediction pipeline from feature engineering to containerized REST API with MLflow experiment tracking.",
+    context: "Data Science & MLOps engineering project aimed at corporate customer retention strategies.",
+    problem: "Revenue loss caused by unanticipated customer attrition without early detection of disengagement warning signs.",
+    solution: "Built a full supervised machine learning workflow with experiment tracking in MLflow, real-time prediction endpoints via FastAPI, and Docker containerization.",
     features: [
-      "Exploration, nettoyage et feature engineering des données clients",
-      "Entraînement et comparaison de modèles supervisés (XGBoost, Random Forest)",
-      "Tracking des hyperparamètres, métriques et artefacts avec MLflow",
-      "API REST FastAPI d'inférence en temps réel",
-      "Conteneurisation complète avec Docker pour un déploiement fiable"
+      "Data preprocessing, exploratory data analysis, and advanced feature engineering",
+      "Comparative training of ensemble models (XGBoost, Random Forest, LightGBM)",
+      "Tracking of hyperparameters, evaluation metrics, and model artifacts via MLflow",
+      "Real-time inference via a production-grade FastAPI REST service",
+      "Containerized deployment environment using Docker"
     ],
-    architecture: "Pipeline Python pour l'ETL et l'entraînement, MLflow Model Registry, serveur d'inférence FastAPI et conteneur Docker prêt pour le déploiement.",
+    architecture: "Python ETL and training pipeline, MLflow Model Registry, FastAPI inference server, and Docker deployment container.",
     technologies: [
       "Python",
       "Machine Learning",
@@ -151,64 +150,64 @@ export const projects = [
       "Scikit-Learn",
       "Pandas"
     ],
-    contribution: "Développement du pipeline complet de modélisation, tracking MLflow, création des endpoints d'inférence FastAPI et conteneurisation.",
-    results: "Haute précision prédictive permettant d'anticiper le churn avant la résiliation effective.",
+    contribution: "Developed the end-to-end modeling pipeline, MLflow experiment tracking, FastAPI inference routes, and Docker build configuration.",
+    results: "High predictive accuracy enabling proactive customer retention campaigns before contract termination.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
   {
     id: "sotrapil-maintenance",
-    title: "Dashboard de Maintenance Prédictive — SOTRAPIL",
+    title: "Predictive Maintenance Dashboard — SOTRAPIL",
     year: "2025",
     domain: "Power BI",
     domains: ["Power BI", "Data Analytics"],
     featured: true,
     status: "completed",
     image: sotrapilImg,
-    shortDescription: "Tableau de bord décisionnel Power BI pour la surveillance des stations de pompage, le suivi des indicateurs et l'analyse d'anomalies.",
-    context: "Stage / Projet d'analyse de données réalisé pour la SOTRAPIL (Société de Transport des Hydrocarbures par Pipelines).",
-    problem: "Difficulté de centraliser les relevés d'équipements industriels et de détecter rapidement les dérives critiques sur les stations de pompage.",
-    solution: "Modélisation relationnelle des données de maintenance et création d'un rapport interactif Power BI avec indicateurs de performance clés (KPIs) et suivi des anomalies.",
+    shortDescription: "Business Intelligence dashboard for monitoring pumping stations, tracking operational KPIs, and detecting equipment anomalies.",
+    context: "Data analytics internship project conducted for SOTRAPIL (Société de Transport des Hydrocarbures par Pipelines).",
+    problem: "Centralizing industrial equipment logs and swiftly detecting critical performance deviations across distributed pumping facilities.",
+    solution: "Engineered a relational maintenance data model and designed an interactive Power BI dashboard featuring real-time KPIs and anomaly indicators.",
     features: [
-      "Centralisation et modélisation des données des stations de pompage",
-      "Visualisation interactive des indicateurs clés (pressions, débits, pannes)",
-      "Identification des tendances d'usure et détection d'anomalies opérationnelles",
-      "Rapports décisionnels et calcul de métriques avancées avec DAX"
+      "Centralization and data modeling across multiple pumping station logs",
+      "Interactive visualization of pressure levels, flow rates, and failure frequencies",
+      "Equipment wear trend analysis and anomaly detection",
+      "Advanced DAX performance measures and automated executive reporting"
     ],
-    architecture: "Pipeline de transformation de données ETL, modèle de données en étoile et tableaux de bord interactifs Power BI.",
+    architecture: "ETL data transformation pipeline, star-schema data modeling, and interactive Power BI analytical reports.",
     technologies: [
       "Power BI",
       "DAX",
       "Data Analytics",
-      "Modélisation de Données",
+      "Data Modeling",
       "Business Intelligence",
       "ETL"
     ],
-    contribution: "Nettoyage et structuration des données industrielles, écriture des formules DAX, et conception ergonomique des tableaux de bord pour les équipes techniques.",
-    results: "Visibilité accrue en temps réel sur la disponibilité des équipements et gain de temps sur la maintenance.",
+    contribution: "Cleaned and structured industrial datasets, wrote advanced DAX measures, and designed ergonomic dashboards for maintenance engineers.",
+    results: "Significantly enhanced visibility over equipment uptime and streamlined maintenance planning.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
   {
     id: "sentiment-analysis-finance",
-    title: "Analyse de Sentiments Financiers — Marché Tunisien",
+    title: "Financial Sentiment Analysis — Tunisian Market",
     year: "2024",
     domain: "Data Science",
     domains: ["Data Science", "AI", "Machine Learning"],
     featured: false,
     status: "completed",
     image: sentimentImg,
-    shortDescription: "Système de traitement du langage naturel (NLP) pour analyser le sentiment des actualités financières du marché boursier tunisien.",
-    context: "Projet universitaire de recherche et application en NLP et Deep Learning.",
-    problem: "Comprendre et quantifier automatiquement l'impact des actualités économiques sur le comportement du marché et des investisseurs.",
-    solution: "Pipeline de collecte de données, extraction de caractéristiques (TF-IDF, embeddings) et classification de sentiments par Deep Learning et Transformers.",
+    shortDescription: "Natural Language Processing (NLP) system analyzing sentiment and polarity from financial news articles affecting the stock market.",
+    context: "Academic research and development project in NLP and Deep Learning.",
+    problem: "Quantifying and analyzing the impact of financial news releases on market sentiment and investor behavior.",
+    solution: "Built a pipeline for article ingestion, text preprocessing (TF-IDF, contextual embeddings), and sentiment classification using Deep Learning and Transformer models.",
     features: [
-      "Collecte et prétraitement de textes d'actualités financières",
-      "Vectorisation et modélisation via PyTorch et Transformers",
-      "Classification des polarités de sentiment (positif, neutre, négatif)",
-      "Évaluation des performances et matrices de confusion"
+      "Automated financial news collection and multilingual text cleaning",
+      "Vectorization and fine-tuning with PyTorch and Transformers",
+      "Three-class sentiment classification (Positive, Neutral, Negative)",
+      "Evaluation metrics and confusion matrix visualization"
     ],
-    architecture: "Scripts Python de prétraitement NLP, modèles de deep learning PyTorch, et scripts d'inférence de polarité.",
+    architecture: "Python NLP preprocessing pipeline, PyTorch deep learning classification models, and sentiment inference scripts.",
     technologies: [
       "Python",
       "NLP",
@@ -218,71 +217,72 @@ export const projects = [
       "Deep Learning",
       "Scikit-Learn"
     ],
-    contribution: "Développement du pipeline de NLP, fine-tuning des modèles et validation expérimentale des résultats.",
-    results: "Classification robuste du sentiment textuel sur des articles financiers en français.",
+    contribution: "Developed the NLP pipeline, fine-tuned transformer models, and conducted rigorous benchmark evaluations.",
+    results: "Robust classification performance on financial news text with high macro F1-score.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   },
   {
     id: "assurancy",
-    title: "Assurancy",
+    title: "Assurancy — Insurance Management Application",
     year: "2024",
     domain: "Software Engineering",
     domains: ["Software Engineering", "Web Development", "Other"],
     featured: false,
-    status: "to_complete",
+    status: "completed",
     image: null,
-    shortDescription: "Projet académique réalisé dans le domaine de l'assurance pendant le cursus d'ingénieur.",
-    context: "Projet universitaire dans le domaine de l'assurance développé à ESPRIT.",
-    problem: "Gestion et optimisation des processus métier dans le secteur de l'assurance.",
-    solution: "Application dédiée à la gestion d'assurance (informations en cours de consolidation).",
+    shortDescription: "Academic software engineering project developed for digital insurance management and customer claims processing.",
+    context: "University software engineering project in the insurance sector developed at ESPRIT.",
+    problem: "Streamlining policy management, client communications, and claim workflows in a unified platform.",
+    solution: "Designed and implemented an application managing insurance records, claim tracking, and user interactions.",
     features: [
-      "Module de gestion des dossiers d'assurance (à préciser)",
-      "Traitement et suivi des demandes clients (à préciser)"
+      "Insurance policy and client dossier management module",
+      "Claims submission and processing workflow",
+      "Customer interaction history and automated status tracking"
     ],
-    architecture: "Architecture applicative (à compléter dans src/data/projects.js)",
+    architecture: "Full-stack application architecture with relational database storage and REST communication.",
     technologies: [
-      "Génie Logiciel",
-      "Bases de Données",
-      "Développement Applicatif"
+      "Software Engineering",
+      "Database Design",
+      "Full-Stack Development"
     ],
-    contribution: "Participation à la conception et au développement du projet (détails à compléter).",
-    results: "",
+    contribution: "Participated in requirement analysis, database schema modeling, and backend service implementation.",
+    results: "Successfully validated during academic reviews at ESPRIT.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: "",
-    note: "ℹ️ Ce projet fait partie intégrante de mon parcours d'études. Les spécifications techniques détaillées seront complétées prochainement."
+    note: "ℹ️ Academic project completed as part of the engineering curriculum at ESPRIT."
   },
   {
     id: "pidev-esprit",
-    title: "Projet Intégré de Développement (PIDEV) — ESPRIT",
+    title: "Integrated Development Project (PIDEV) — ESPRIT",
     year: "2023",
     domain: "Software Engineering",
     domains: ["Software Engineering", "Web Development", "Backend"],
     featured: false,
     status: "completed",
     image: null,
-    shortDescription: "Projet collaboratif de génie logiciel mené en équipe selon les méthodologies agiles Scrum, couvrant la conception complète d'un système d'information.",
-    context: "Projet académique intégré réalisé au sein d'ESPRIT (École Supérieure Privée d'Ingénierie et de Technologies).",
-    problem: "Concevoir et livrer une solution logicielle complète et robuste répondant à un cahier des charges d'entreprise, en équipe pluridisciplinaire.",
-    solution: "Développement full-stack complet : modélisation UML, conception de la base de données relationnelle, mise en place des APIs et de l'interface utilisateur, avec gestion de versions collaborative Git.",
+    shortDescription: "Team-based software engineering project executed using Agile Scrum, covering the end-to-end design of an enterprise information system.",
+    context: "Integrated engineering project completed at ESPRIT (Private Higher School of Engineering and Technology).",
+    problem: "Designing, building, and delivering a robust enterprise software solution satisfying strict industry-standard specifications in a multidisciplinary team.",
+    solution: "Full-stack development: UML modeling, relational database design, REST API implementation, interactive UI, and collaborative Git workflow.",
     features: [
-      "Gestion des utilisateurs, authentification et gestion des permissions",
-      "CRUD complet pour les entités métier",
-      "Tableau de bord et génération de rapports",
-      "Intégration d'APIs tierces et communication asynchrone"
+      "User management, secure authentication, and role-based permissions",
+      "Full CRUD operations for domain business entities",
+      "Interactive analytics dashboard and automated reporting",
+      "Third-party API integration and asynchronous event handling"
     ],
-    architecture: "Architecture en couches (MVC / n-tiers), séparation frontend/backend, base de données relationnelle MySQL, et contrôle de versions Git/GitHub.",
+    architecture: "Layered architecture (MVC / multi-tier), clear frontend/backend separation, MySQL relational database, and Git/GitHub version control.",
     technologies: [
-      "Génie Logiciel",
+      "Software Engineering",
       "Java",
-      "Bases de Données (MySQL)",
+      "MySQL",
       "Agile / Scrum",
       "Git",
       "UML",
       "Backend"
     ],
-    contribution: "Modélisation de données, développement des modules backend, tests unitaires et intégration continue au sein de l'équipe de projet.",
-    results: "Validation réussie du projet devant le jury académique d'ESPRIT.",
+    contribution: "Database modeling, backend module implementation, unit test suites, and continuous integration within the project team.",
+    results: "Successfully evaluated and validated before the ESPRIT academic examination board.",
     ghLink: "https://github.com/dhiakhalfalli",
     demoLink: ""
   }

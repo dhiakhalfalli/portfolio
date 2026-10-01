@@ -38,7 +38,7 @@ function ResumeNew() {
               <div style={{ display: "flex", flexWrap: "wrap", gap: "1.5rem", color: "#a3a0b0" }}>
                 <span><MdEmail style={{ color: "#7c3aed" }} /> dhiakhalfalli12@gmail.com</span>
                 <span><MdPhone style={{ color: "#7c3aed" }} /> +216 96 412 991</span>
-                <span><MdLocationOn style={{ color: "#7c3aed" }} /> Tunis, Tunisie</span>
+                <span><MdLocationOn style={{ color: "#7c3aed" }} /> Tunis, Tunisia</span>
                 <a href="https://www.linkedin.com/in/dhiakhalfalli" target="_blank" rel="noreferrer" style={{ color: "#a3a0b0", textDecoration: "none" }}>
                   <FaLinkedinIn style={{ color: "#7c3aed" }} /> LinkedIn
                 </a>
@@ -53,10 +53,10 @@ function ResumeNew() {
           <Row className="justify-content-center" style={{ paddingBottom: "30px" }}>
             <Col md={10}>
               <p style={{ color: "#a3a0b0", lineHeight: "1.8", fontSize: "1.05em" }}>
-                Ingénieur en Data Science spécialisé en Machine Learning, Deep Learning et LLM Engineering.
-                Expérience dans la conception de systèmes IA avancés incluant RAG, architectures multi-agents,
-                NLP et déploiement de solutions full-stack. Capable de concevoir des solutions IA de bout en bout,
-                de l'analyse du besoin jusqu'à l'intégration et l'évaluation.
+                Data Science Engineer specializing in Machine Learning, Deep Learning and LLM Engineering.
+                Experienced in designing advanced AI systems including RAG, multi-agent architectures,
+                NLP and full-stack solution deployment. Capable of building end-to-end AI solutions,
+                from requirements analysis through to integration and evaluation.
               </p>
             </Col>
           </Row>
@@ -65,49 +65,49 @@ function ResumeNew() {
           <Row className="justify-content-center">
             <Col md={10}>
               <h2 className="project-heading" style={{ paddingBottom: "20px" }}>
-                <strong className="purple">Expériences</strong>
+                <strong className="purple">Work Experience</strong>
               </h2>
 
               <div className="experience-card">
-                <h3>PFE — Plateforme Intelligente de Recrutement Multi-Agents</h3>
+                <h3>Final Year Project (PFE) — Intelligent Multi-Agent HR Platform</h3>
                 <div className="company">SEGULA Technologies</div>
                 <div className="date">
-                  <AiOutlineCalendar /> Déc. 2025 — Juin 2026
+                  <AiOutlineCalendar /> Dec. 2025 — Jun. 2026
                 </div>
                 <ul>
-                  <li>Développement d'une plateforme RH intelligente basée sur une architecture multi-agents : CV Agent, Copilot RH, Interview Agent et Privacy Agent.</li>
-                  <li>Développement d'un pipeline CV : OCR → NLP → scoring explicable (XAI).</li>
-                  <li>Mise en place d'un système RAG pour un assistant RH basé sur des documents internes.</li>
-                  <li>Développement d'un agent d'entretien vocal avec STT/TTS via Whisper et Groq.</li>
-                  <li>Backend avec FastAPI et LangGraph, frontend avec React.js.</li>
-                  <li>Utilisation de MongoDB et Docker pour la gestion des données et le déploiement.</li>
-                  <li>Mise en place d'un module RGPD avec audit d'équité algorithmique.</li>
+                  <li>Built an intelligent HR platform based on a multi-agent architecture: CV Agent, HR Copilot, Interview Agent and Privacy Agent.</li>
+                  <li>Developed a CV pipeline: OCR → NLP → Explainable Scoring (XAI).</li>
+                  <li>Implemented a RAG system for an HR assistant powered by internal documents.</li>
+                  <li>Built a voice interview agent with STT/TTS using Whisper and Groq.</li>
+                  <li>Backend with FastAPI and LangGraph, frontend with React.js.</li>
+                  <li>Used MongoDB and Docker for data management and deployment.</li>
+                  <li>Implemented a GDPR compliance module with algorithmic fairness auditing.</li>
                 </ul>
               </div>
 
               <div className="experience-card">
-                <h3>Stagiaire Data Scientist</h3>
+                <h3>Data Scientist Intern</h3>
                 <div className="company">SOTRAPIL — Tunis</div>
                 <div className="date">
-                  <AiOutlineCalendar /> Juin 2025 — Juil. 2025
+                  <AiOutlineCalendar /> Jun. 2025 — Jul. 2025
                 </div>
                 <ul>
-                  <li>Développement de modèles de maintenance prédictive pour l'analyse industrielle.</li>
-                  <li>Mise en place de techniques de détection d'anomalies sur des données issues de capteurs.</li>
-                  <li>Création de dashboards Power BI pour le suivi des performances opérationnelles.</li>
+                  <li>Developed predictive maintenance models for industrial data analysis.</li>
+                  <li>Implemented anomaly detection techniques on sensor data streams.</li>
+                  <li>Built Power BI dashboards to monitor operational performance KPIs.</li>
                 </ul>
               </div>
 
               <div className="experience-card">
-                <h3>Stage d'Immersion en Développement Applicatif</h3>
+                <h3>Application Development Internship</h3>
                 <div className="company">ESPRIT DSI</div>
                 <div className="date">
-                  <AiOutlineCalendar /> Juil. 2024 — Sep. 2024
+                  <AiOutlineCalendar /> Jul. 2024 — Sep. 2024
                 </div>
                 <ul>
-                  <li>Développement d'une application de gestion de stock.</li>
-                  <li>Stack : Spring Boot, Angular, MySQL.</li>
-                  <li>Implémentation des fonctionnalités CRUD et amélioration de l'interface utilisateur.</li>
+                  <li>Developed an inventory management application.</li>
+                  <li>Tech stack: Spring Boot, Angular, MySQL.</li>
+                  <li>Implemented CRUD features and improved the user interface.</li>
                 </ul>
               </div>
             </Col>
@@ -117,11 +117,11 @@ function ResumeNew() {
           <Row className="justify-content-center" style={{ paddingTop: "30px" }}>
             <Col md={10}>
               <h2 className="project-heading" style={{ paddingBottom: "20px" }}>
-                <strong className="purple">Formation</strong>
+                <strong className="purple">Education</strong>
               </h2>
 
               <div className="experience-card">
-                <h3>Diplôme d'Ingénieur Informatique — Data Science</h3>
+                <h3>Engineering Degree in Computer Science — Data Science</h3>
                 <div className="company">ESPRIT — École Supérieure Privée d'Ingénierie et de Technologie</div>
                 <div className="date">
                   <AiOutlineCalendar /> 2022 — 2026
@@ -129,7 +129,7 @@ function ResumeNew() {
               </div>
 
               <div className="experience-card">
-                <h3>Classes Préparatoires Mathématiques — Physique</h3>
+                <h3>Preparatory Classes — Mathematics & Physics</h3>
                 <div className="company">IPEIG</div>
                 <div className="date">
                   <AiOutlineCalendar /> 2019 — 2022
@@ -157,12 +157,12 @@ function ResumeNew() {
           <Row className="justify-content-center" style={{ paddingBottom: "50px" }}>
             <Col md={10}>
               <h2 className="project-heading" style={{ paddingBottom: "20px" }}>
-                <strong className="purple">Langues</strong>
+                <strong className="purple">Languages</strong>
               </h2>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-                <span className="cert-badge">🇹🇳 Arabe (Maternelle)</span>
-                <span className="cert-badge">🇫🇷 Français (B2)</span>
-                <span className="cert-badge">🇬🇧 Anglais (B2)</span>
+                <span className="cert-badge">🇹🇳 Arabic (Native)</span>
+                <span className="cert-badge">🇫🇷 French (B2)</span>
+                <span className="cert-badge">🇬🇧 English (B2)</span>
               </div>
             </Col>
           </Row>

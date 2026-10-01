@@ -48,11 +48,11 @@ function Projects() {
         {/* Header Section */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
           <h1 className="project-heading" style={{ fontSize: "2.8em", fontWeight: 800 }}>
-            Mon Parcours & <strong className="purple">Projets</strong>
+            My Journey & <strong className="purple">Projects</strong>
           </h1>
           <p style={{ color: "#a3a0b0", fontSize: "1.15em", maxWidth: "800px", margin: "0 auto" }}>
-            Découvrez l'ensemble de mes réalisations techniques au cours de mes 4 années d'études à l'ESPRIT,
-            mes stages, mon PFE chez SEGULA Technologies et mes projets d'ingénierie en Data Science & IA.
+            Explore all my technical work across 4 years of engineering studies at ESPRIT,
+            internships, my Final Year Project at SEGULA Technologies and personal Data Science & AI projects.
           </p>
         </div>
 
@@ -83,10 +83,10 @@ function Projects() {
             </span>
             <div>
               <h2 style={{ fontSize: "1.8em", fontWeight: 700, margin: 0, color: "#ffffff" }}>
-                Featured Projects <span className="purple">— Projets Phares</span>
+                Featured Projects <span className="purple">— Highlights</span>
               </h2>
               <span style={{ fontSize: "0.9em", color: "#9ca3af" }}>
-                Les projets les plus représentatifs de mes compétences en IA, Data Science & MLOps
+                The most representative projects showcasing my skills in AI, Data Science & MLOps
               </span>
             </div>
           </div>
@@ -227,7 +227,7 @@ function Projects() {
                           padding: "8px 12px",
                         }}
                       >
-                        <BsInfoCircle style={{ marginRight: "6px" }} /> Fiche Détails
+                        <BsInfoCircle style={{ marginRight: "6px" }} /> Details
                       </Button>
                       {project.ghLink && (
                         <Button
@@ -270,10 +270,10 @@ function Projects() {
           >
             <div>
               <h2 style={{ fontSize: "1.8em", fontWeight: 700, margin: 0, color: "#ffffff" }}>
-                All Projects <span className="purple">— Bibliothèque Complète</span>
+                All Projects <span className="purple">— Complete Library</span>
               </h2>
               <span style={{ fontSize: "0.9em", color: "#9ca3af" }}>
-                Explorer l'intégralité des projets réalisés par domaine et par année
+                Browse my complete project library filtered by domain and year
               </span>
             </div>
             <Badge
@@ -285,7 +285,7 @@ function Projects() {
                 color: "#c084fc",
               }}
             >
-              {filteredProjects.length} {filteredProjects.length > 1 ? "projets affichés" : "projet affiché"}
+              {filteredProjects.length} {filteredProjects.length > 1 ? "projects found" : "project found"}
             </Badge>
           </div>
 
@@ -315,7 +315,7 @@ function Projects() {
                 </InputGroup.Text>
                 <Form.Control
                   type="text"
-                  placeholder="Rechercher par titre, technologie (FastAPI, React, LangGraph...), ou mot-clé..."
+                  placeholder="Search by title, technology (FastAPI, React, LangGraph...), or keyword..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   style={{
@@ -332,7 +332,7 @@ function Projects() {
                     onClick={() => setSearchQuery("")}
                     style={{ borderColor: "rgba(124, 58, 237, 0.3)" }}
                   >
-                    Effacer
+                    Clear
                   </Button>
                 )}
               </InputGroup>
@@ -341,7 +341,7 @@ function Projects() {
             {/* Filter by Domain */}
             <div style={{ marginBottom: "15px" }}>
               <div style={{ fontSize: "0.85em", color: "#9ca3af", marginBottom: "8px", fontWeight: 600 }}>
-                FILTRER PAR DOMAINE :
+                FILTER BY DOMAIN:
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {projectDomains.map((dom) => {
@@ -372,7 +372,7 @@ function Projects() {
             {/* Filter by Year */}
             <div>
               <div style={{ fontSize: "0.85em", color: "#9ca3af", marginBottom: "8px", fontWeight: 600 }}>
-                FILTRER PAR ANNÉE :
+                FILTER BY YEAR:
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {projectYears.map((yr) => {
@@ -393,7 +393,7 @@ function Projects() {
                         transition: "all 0.2s ease",
                       }}
                     >
-                      {yr === "All" ? "Toutes les années" : yr}
+                      {yr === "All" ? "All years" : yr}
                     </button>
                   );
                 })}
@@ -412,9 +412,9 @@ function Projects() {
                 border: "1px dashed rgba(124, 58, 237, 0.3)",
               }}
             >
-              <h4 style={{ color: "#ffffff", marginBottom: "10px" }}>Aucun projet trouvé</h4>
+              <h4 style={{ color: "#ffffff", marginBottom: "10px" }}>No projects found</h4>
               <p style={{ color: "#9ca3af" }}>
-                Aucun projet ne correspond à vos critères de recherche. Essayez de réinitialiser les filtres.
+                No projects match your current filters. Try resetting them.
               </p>
               <Button
                 variant="outline-primary"
@@ -424,7 +424,7 @@ function Projects() {
                   setSearchQuery("");
                 }}
               >
-                Réinitialiser les filtres
+                Reset filters
               </Button>
             </div>
           ) : (
@@ -519,7 +519,7 @@ function Projects() {
                               borderRadius: "12px",
                             }}
                           >
-                            ⚠️ À compléter
+                            ⚠️ In Progress
                           </span>
                         ) : project.featured ? (
                           <span
@@ -606,7 +606,7 @@ function Projects() {
                             fontSize: "0.85em",
                           }}
                         >
-                          <BsInfoCircle style={{ marginRight: "5px" }} /> Détails
+                          <BsInfoCircle style={{ marginRight: "5px" }} /> Details
                         </Button>
                         {project.ghLink && (
                           <Button
@@ -686,7 +686,7 @@ function Projects() {
                       borderRadius: "12px",
                     }}
                   >
-                    ⚠️ Informations à compléter
+                    ⚠️ Details to be completed
                   </span>
                 )}
               </Modal.Title>
@@ -732,7 +732,7 @@ function Projects() {
               {/* Description */}
               {activeModalProject.shortDescription && (
                 <div style={{ marginBottom: "20px" }}>
-                  <h5 style={{ color: "#c084fc", fontWeight: 700, fontSize: "1.05em" }}>📌 Aperçu</h5>
+                  <h5 style={{ color: "#c084fc", fontWeight: 700, fontSize: "1.05em" }}>📌 Overview</h5>
                   <p style={{ color: "#cbd5e1", lineHeight: 1.7, fontSize: "0.98em" }}>
                     {activeModalProject.shortDescription}
                   </p>
@@ -753,7 +753,7 @@ function Projects() {
                   {activeModalProject.context && (
                     <div style={{ marginBottom: activeModalProject.problem ? "15px" : "0" }}>
                       <h5 style={{ color: "#38bdf8", fontWeight: 700, fontSize: "1em", marginBottom: "6px" }}>
-                        🎯 Contexte
+                        🎯 Context
                       </h5>
                       <p style={{ margin: 0, color: "#94a3b8", lineHeight: 1.6 }}>
                         {activeModalProject.context}
@@ -763,7 +763,7 @@ function Projects() {
                   {activeModalProject.problem && (
                     <div>
                       <h5 style={{ color: "#f87171", fontWeight: 700, fontSize: "1em", marginBottom: "6px" }}>
-                        ⚡ Problématique adressée
+                        ⚡ Problem Statement
                       </h5>
                       <p style={{ margin: 0, color: "#94a3b8", lineHeight: 1.6 }}>
                         {activeModalProject.problem}
@@ -787,7 +787,7 @@ function Projects() {
                   {activeModalProject.solution && (
                     <div style={{ marginBottom: activeModalProject.architecture ? "15px" : "0" }}>
                       <h5 style={{ color: "#4ade80", fontWeight: 700, fontSize: "1em", marginBottom: "6px" }}>
-                        💡 Solution apportée
+                        💡 Solution
                       </h5>
                       <p style={{ margin: 0, color: "#94a3b8", lineHeight: 1.6 }}>
                         {activeModalProject.solution}
@@ -797,7 +797,7 @@ function Projects() {
                   {activeModalProject.architecture && (
                     <div>
                       <h5 style={{ color: "#a78bfa", fontWeight: 700, fontSize: "1em", marginBottom: "6px" }}>
-                        🏗️ Architecture Technique
+                        🏗️ Technical Architecture
                       </h5>
                       <p style={{ margin: 0, color: "#94a3b8", lineHeight: 1.6 }}>
                         {activeModalProject.architecture}
@@ -811,7 +811,7 @@ function Projects() {
               {activeModalProject.features && activeModalProject.features.length > 0 && (
                 <div style={{ marginBottom: "20px" }}>
                   <h5 style={{ color: "#c084fc", fontWeight: 700, fontSize: "1.05em", marginBottom: "10px" }}>
-                    🚀 Fonctionnalités Clés
+                    🚀 Key Features
                   </h5>
                   <ul style={{ listStyle: "none", paddingLeft: 0, margin: 0 }}>
                     {activeModalProject.features.map((feat, idx) => (
@@ -839,7 +839,7 @@ function Projects() {
               {activeModalProject.technologies && activeModalProject.technologies.length > 0 && (
                 <div style={{ marginBottom: "20px" }}>
                   <h5 style={{ color: "#c084fc", fontWeight: 700, fontSize: "1.05em", marginBottom: "10px" }}>
-                    🛠️ Technologies & Outils
+                    🛠️ Technologies & Tools
                   </h5>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {activeModalProject.technologies.map((t, idx) => (
@@ -867,7 +867,7 @@ function Projects() {
               {activeModalProject.contribution && (
                 <div style={{ marginBottom: "20px" }}>
                   <h5 style={{ color: "#38bdf8", fontWeight: 700, fontSize: "1.05em", marginBottom: "6px" }}>
-                    👤 Rôle & Contribution Personnelle
+                    👤 Role & Personal Contribution
                   </h5>
                   <p style={{ color: "#94a3b8", lineHeight: 1.6, margin: 0, fontSize: "0.95em" }}>
                     {activeModalProject.contribution}
@@ -879,7 +879,7 @@ function Projects() {
               {activeModalProject.results && (
                 <div style={{ marginBottom: "15px" }}>
                   <h5 style={{ color: "#4ade80", fontWeight: 700, fontSize: "1.05em", marginBottom: "6px" }}>
-                    📈 Résultats & Impact
+                    📈 Results & Impact
                   </h5>
                   <p style={{ color: "#94a3b8", lineHeight: 1.6, margin: 0, fontSize: "0.95em" }}>
                     {activeModalProject.results}
@@ -905,7 +905,7 @@ function Projects() {
                     rel="noreferrer"
                     style={{ borderColor: "rgba(124, 58, 237, 0.5)", color: "#e2e8f0" }}
                   >
-                    <BsGithub style={{ marginRight: "6px" }} /> Voir sur GitHub
+                    <BsGithub style={{ marginRight: "6px" }} /> View on GitHub
                   </Button>
                 )}
                 {activeModalProject.demoLink && (
@@ -916,12 +916,12 @@ function Projects() {
                     rel="noreferrer"
                     style={{ background: "#7c3aed", border: "none" }}
                   >
-                    <HiOutlineExternalLink style={{ marginRight: "6px" }} /> Démo en ligne
+                    <HiOutlineExternalLink style={{ marginRight: "6px" }} /> Live Demo
                   </Button>
                 )}
               </div>
               <Button variant="secondary" onClick={() => setActiveModalProject(null)}>
-                Fermer
+                Close
               </Button>
             </Modal.Footer>
           </Modal>
